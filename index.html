@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Sync : Where Sports Meet</title>
+    <link rel="icon" type="image/x-icon" href="img.jpeg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+        <nav>
+            <div class="main-nav container flex ">
+                    <a href="#" class="company-logo" onclick="reload()">
+                        <img src="img5.png" alt="company logo">
+                    </a>
+                
+                <div class="nav-links">
+                    <ul class="flex">
+                        <ll class="hover-links nav-items" id="cricket" onclick="onNavItemClick('cricket')">Cricket</ll>
+                        <ll class="hover-links nav-items" id="football" onclick="onNavItemClick('football')">Football</ll>
+                        <ll class="hover-links nav-items" id="hockey" onclick="onNavItemClick('hockey')">Hockey</ll>
+                        
+                        <ll class="hover-links nav-items" id="chess" onclick="onNavItemClick('chess')">Chess</ll>
+                        <ll class="hover-links nav-items" id="kabbadi" onclick="onNavItemClick('kabbadi')">Kabbadi</ll>
+                        <ll class="hover-links nav-items" id="esports" onclick="onNavItemClick('esports')">E Sports</ll>
+                        
+
+                    </ul>
+                </div>
+                <div class="search-bar flex">
+                    <input type="text" class="news-input" id="search-text" placeholder="e.g. Technology">
+                    <button class="search-button" id="search-button"> Search</button>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="cards-container container flex" id="cards-container">
+                
+
+            </div>
+        </main>
+        <template id="template-news-card">
+
+            <div class="card">
+                <div class="header">
+                    <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-tittle">This is the Tittle</h3>
+                    <h6 class="news-source" id="news-source">End Gadget 13/10/2023</h6>
+                    <p class="news-desc" id="news-desc"> qqqqqqqqqqqqq qqqqqqqqqq qqqqqqqqqq qqqqqqq qqqqqqq qqqq qqqqqqq qqqqqqqqq qqqqqqqqqqqq qqqqqqq qqqqqqq qqqqqqqq qqqq</p>
+                </div>
+            </div>
+
+        </template>
+        
+
+
+    <script src="test.js"></script>
+</body>
+</html>
